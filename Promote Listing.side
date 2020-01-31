@@ -1,0 +1,2289 @@
+{
+  "id": "6685025c-d12c-4907-95ee-042e24d6a1fe",
+  "version": "2.0",
+  "name": "Chicago Oglasi",
+  "url": "https://chicagooglasi.com",
+  "tests": [{
+    "id": "07dfae44-fd1d-405b-b8cd-1a45dbad54a5",
+    "name": "Publish Listing with picture",
+    "commands": [{
+      "id": "70b24db3-7f6f-4feb-a30f-dd3f4641e4d5",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c43898e5-23cc-4fc0-9498-bff89d45df42",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1608x1029",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cb720e08-d532-424d-852b-ff0df08e4d55",
+      "comment": "Login registered user",
+      "command": "click",
+      "target": "css=.main-nav:nth-child(1) .nav-item:nth-child(2) > .btn:nth-child(1)",
+      "targets": [
+        ["linkText=Login/Sign Up", "linkText"],
+        ["css=.main-nav:nth-child(1) .nav-item:nth-child(2) > .btn:nth-child(1)", "css:finder"],
+        ["xpath=(//a[contains(text(),'Login/Sign Up')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/site/login')])[3]", "xpath:href"],
+        ["xpath=//div[2]/div/div[2]/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "74dc522b-8a4a-4d49-a7a3-f3a8932073c0",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginform-email",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bd597cd9-e831-4376-9428-fd529d0dcee4",
+      "comment": "",
+      "command": "type",
+      "target": "id=loginform-email",
+      "targets": [
+        ["id=loginform-email", "id"],
+        ["name=LoginForm[email]", "name"],
+        ["css=#loginform-email", "css:finder"],
+        ["xpath=//input[@id='loginform-email']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form-modal']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "admin"
+    }, {
+      "id": "f24a30dc-6c50-42c5-b2d5-6cebd6efaa97",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginform-password",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7a77c877-cd36-4612-9ee8-7a5c64aa3086",
+      "comment": "",
+      "command": "type",
+      "target": "id=loginform-password",
+      "targets": [
+        ["id=loginform-password", "id"],
+        ["name=LoginForm[password]", "name"],
+        ["css=#loginform-password", "css:finder"],
+        ["xpath=//input[@id='loginform-password']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form-modal']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "singularity.is"
+    }, {
+      "id": "01fd4441-b9a9-4643-a918-d9d188b02a27",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-modal-control-submit",
+      "targets": [
+        ["name=login-button", "name"],
+        ["css=.btn-modal-control-submit", "css:finder"],
+        ["xpath=//button[@name='login-button']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form-modal']/div[4]/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c940d28d-3d32-49d5-8c7c-9af8462ff120",
+      "comment": "Klik on Publish button to start creating listing",
+      "command": "click",
+      "target": "css=.main-nav .flex-w-150 > .btn",
+      "targets": [
+        ["css=.main-nav .flex-w-150 > .btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Publish')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/listing/create')]", "xpath:href"],
+        ["xpath=//div[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "78e88cc7-d359-44e7-8ef3-47858e4824c8",
+      "comment": "Pick Category and input title",
+      "command": "click",
+      "target": "id=listingform-title",
+      "targets": [
+        ["id=listingform-title", "id"],
+        ["name=ListingForm[title]", "name"],
+        ["css=.input-group > #listingform-title", "css:finder"],
+        ["xpath=//input[@id='listingform-title']", "xpath:attributes"],
+        ["xpath=//form[@id='listingform-id-step-1']/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e4cb90b8-c638-44ff-833e-47555c3c0ae8",
+      "comment": "",
+      "command": "type",
+      "target": "id=listingform-title",
+      "targets": [
+        ["id=listingform-title", "id"],
+        ["name=ListingForm[title]", "name"],
+        ["css=.input-group > #listingform-title", "css:finder"],
+        ["xpath=//input[@id='listingform-title']", "xpath:attributes"],
+        ["xpath=//form[@id='listingform-id-step-1']/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Vehicle Test"
+    }, {
+      "id": "19632fbc-acf0-4ed0-8519-aacf18ad9ba8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dd-parent:nth-child(1) > .text-gray-dark",
+      "targets": [
+        ["linkText=Vehicles", "linkText"],
+        ["css=.dd-parent:nth-child(1) > .text-gray-dark", "css:finder"],
+        ["xpath=(//a[contains(text(),'Vehicles')])[5]", "xpath:link"],
+        ["xpath=//ul[@id='manual-category-selector-widget']/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:void(0)')])[5]", "xpath:href"],
+        ["xpath=//div[3]/div/div/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3b06c860-2438-4175-ab9a-d93ff77fc0b2",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.border-0 > .text-gray-dark",
+      "targets": [
+        ["css=.border-0 > .text-gray-dark", "css:finder"],
+        ["xpath=(//a[contains(text(),'Vehicles')])[5]", "xpath:link"],
+        ["xpath=//ul[@id='manual-category-selector-widget']/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:void(0)')])[5]", "xpath:href"],
+        ["xpath=//div[3]/div/div/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "93f0b7dd-ab82-4b04-b2c7-af54025fd1dc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.border-0 .list-group-item:nth-child(1) > .text-gray-dark",
+      "targets": [
+        ["linkText=Passenger vehicles", "linkText"],
+        ["css=.border-0 .list-group-item:nth-child(1) > .text-gray-dark", "css:finder"],
+        ["xpath=//a[contains(text(),'Passenger vehicles')]", "xpath:link"],
+        ["xpath=//ul[@id='manual-category-selector-widget']/li/ul/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:void(0)')])[6]", "xpath:href"],
+        ["xpath=//li/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Passenger vehicles')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9903baf5-0fdd-469a-ab0d-333363bc8afe",
+      "comment": "",
+      "command": "click",
+      "target": "id=save-step-1-btn",
+      "targets": [
+        ["id=save-step-1-btn", "id"],
+        ["css=#save-step-1-btn", "css:finder"],
+        ["xpath=//button[@id='save-step-1-btn']", "xpath:attributes"],
+        ["xpath=//form[@id='listingform-id-step-1']/div[5]/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Save & Continue')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "efe38926-fb2b-4928-a4d0-91025cc06129",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=save-step-1-btn",
+      "targets": [
+        ["id=save-step-1-btn", "id"],
+        ["css=#save-step-1-btn", "css:finder"],
+        ["xpath=//button[@id='save-step-1-btn']", "xpath:attributes"],
+        ["xpath=//form[@id='listingform-id-step-1']/div[5]/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Save & Continue')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b82b36fd-9c0b-4a34-ba36-4c9f871c597d",
+      "comment": "Input general info",
+      "command": "click",
+      "target": "id=listingform-listing_type",
+      "targets": [
+        ["id=listingform-listing_type", "id"],
+        ["name=ListingForm[listing_type]", "name"],
+        ["css=#listingform-listing_type", "css:finder"],
+        ["xpath=//select[@id='listingform-listing_type']", "xpath:attributes"],
+        ["xpath=//form[@id='listingform-id-step-2']/div/div[2]/select", "xpath:idRelative"],
+        ["xpath=//div[2]/select", "xpath:position"],
+        ["xpath=//select[contains(.,'Offer\nDemand\nRent')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ecd5c24d-5e1f-48db-842e-3e9c56f67f01",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[2]/select",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fdcba38e-0def-437b-ba38-6d04e58c217d",
+      "comment": "",
+      "command": "click",
+      "target": "id=listingform-listing_type",
+      "targets": [
+        ["id=listingform-listing_type", "id"],
+        ["name=ListingForm[listing_type]", "name"],
+        ["css=#listingform-listing_type", "css:finder"],
+        ["xpath=//select[@id='listingform-listing_type']", "xpath:attributes"],
+        ["xpath=//form[@id='listingform-id-step-2']/div/div[2]/select", "xpath:idRelative"],
+        ["xpath=//div[2]/select", "xpath:position"],
+        ["xpath=//select[contains(.,'Offer\nDemand\nRent')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "55c27662-2c9f-4e34-af42-c47656899454",
+      "comment": "",
+      "command": "click",
+      "target": "css=.field-listingform-title > #listingform-title",
+      "targets": [
+        ["css=.field-listingform-title > #listingform-title", "css:finder"],
+        ["xpath=(//input[@id='listingform-title'])[2]", "xpath:attributes"],
+        ["xpath=//form[@id='listingform-id-step-2']/div[2]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0117d754-efe5-41e9-966f-790507a44362",
+      "comment": "",
+      "command": "type",
+      "target": "css=.field-listingform-title > #listingform-title",
+      "targets": [
+        ["css=.field-listingform-title > #listingform-title", "css:finder"],
+        ["xpath=(//input[@id='listingform-title'])[2]", "xpath:attributes"],
+        ["xpath=//form[@id='listingform-id-step-2']/div[2]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": "Vehicle Test 1"
+    }, {
+      "id": "96c3cec8-b35d-4779-b4da-69bb53f9ee97",
+      "comment": "",
+      "command": "click",
+      "target": "id=listingform-short_description",
+      "targets": [
+        ["id=listingform-short_description", "id"],
+        ["name=ListingForm[short_description]", "name"],
+        ["css=#listingform-short_description", "css:finder"],
+        ["xpath=//input[@id='listingform-short_description']", "xpath:attributes"],
+        ["xpath=//form[@id='listingform-id-step-2']/div[3]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f3cd62e6-659f-48bb-bda8-1e69883c716e",
+      "comment": "",
+      "command": "type",
+      "target": "id=listingform-short_description",
+      "targets": [
+        ["id=listingform-short_description", "id"],
+        ["name=ListingForm[short_description]", "name"],
+        ["css=#listingform-short_description", "css:finder"],
+        ["xpath=//input[@id='listingform-short_description']", "xpath:attributes"],
+        ["xpath=//form[@id='listingform-id-step-2']/div[3]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": "This is the best car ever."
+    }, {
+      "id": "792e48ca-81ae-4b51-bb9c-d852ba9a72b0",
+      "comment": "",
+      "command": "click",
+      "target": "id=address-geo-locator-btn",
+      "targets": [
+        ["id=address-geo-locator-btn", "id"],
+        ["css=#address-geo-locator-btn", "css:finder"],
+        ["xpath=//button[@id='address-geo-locator-btn']", "xpath:attributes"],
+        ["xpath=//form[@id='listingform-id-step-2']/div[4]/div[2]/div[5]/button", "xpath:idRelative"],
+        ["xpath=//div[5]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Locate on map')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "936566b3-b378-42d0-a387-a5c825b22bc4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.gm-style:nth-child(1) > div:nth-child(1) > div:nth-child(3)",
+      "targets": [
+        ["css=.gm-style:nth-child(1) > div:nth-child(1) > div:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='mapw0-map-canvas']/div/div/div/div[3]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div/div/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c40910f9-c8fd-4243-b218-93ac753c642e",
+      "comment": "",
+      "command": "click",
+      "target": "id=address-geo-locator-btn",
+      "targets": [
+        ["id=address-geo-locator-btn", "id"],
+        ["css=#address-geo-locator-btn", "css:finder"],
+        ["xpath=//button[@id='address-geo-locator-btn']", "xpath:attributes"],
+        ["xpath=//form[@id='listingform-id-step-2']/div[4]/div[2]/div[5]/button", "xpath:idRelative"],
+        ["xpath=//div[5]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Locate on map')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4da0ffca-fbe8-4fe7-8ba4-c494743864dd",
+      "comment": "",
+      "command": "click",
+      "target": "id=listingform-mainattributefields-164",
+      "targets": [
+        ["id=listingform-mainattributefields-164", "id"],
+        ["name=ListingForm[mainAttributeFields][164]", "name"],
+        ["css=#listingform-mainattributefields-164", "css:finder"],
+        ["xpath=//select[@id='listingform-mainattributefields-164']", "xpath:attributes"],
+        ["xpath=//div[@id='w1']/div[2]/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//div/div/div/select", "xpath:position"],
+        ["xpath=//select[contains(.,'- Manufacturer -\n Acura\n Alfa romeo\n AMC\n Hummer\n Aston martin\n Audi\n Bentley\n BMW\n Bugatti\n Buick\n Cadilac\n Chevrolet\n Crysler\n Daewoo\n Datsun\n De lorean\n Dodge\n Eagle\n Ferrari\n Fiat\n Fisker\n Ford\n Freightliner\n Genesis\n Geo\n GMC\n Honda\n Hyundai\n Infiniti\n Isuzu\n Jaguar\n Jeep\n Karma\n Kia\n Lamborghini\n Land rover\n Lexus\n Lincoln\n Lotus\n Maserati\n Maybach\n Mazda\n McLaren\n Mercedes-Benz\n Mercury\n Mini\n Mitsubishi\n Nissan\n Oldsmobile\n Plymouth\n Pontiac\n Porsche\n Ram\n Rolls-Royce\n Saab\n Saturn\n Scion\n Smart\n Srt\n Subaru\n Suzuki\n Tesla\n Toyota\n Volkswagen\n Volvo\n Yugo')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a14cb81f-c750-4dec-9a65-2734441a613b",
+      "comment": "",
+      "command": "select",
+      "target": "id=listingform-mainattributefields-164",
+      "targets": [],
+      "value": "label=regexp:\\sAudi"
+    }, {
+      "id": "be6a270e-0775-47aa-a481-85c26771f099",
+      "comment": "",
+      "command": "click",
+      "target": "id=listingform-mainattributefields-164",
+      "targets": [
+        ["id=listingform-mainattributefields-164", "id"],
+        ["name=ListingForm[mainAttributeFields][164]", "name"],
+        ["css=#listingform-mainattributefields-164", "css:finder"],
+        ["xpath=//select[@id='listingform-mainattributefields-164']", "xpath:attributes"],
+        ["xpath=//div[@id='w1']/div[2]/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//div/div/div/select", "xpath:position"],
+        ["xpath=//select[contains(.,'- Manufacturer -\n Acura\n Alfa romeo\n AMC\n Hummer\n Aston martin\n Audi\n Bentley\n BMW\n Bugatti\n Buick\n Cadilac\n Chevrolet\n Crysler\n Daewoo\n Datsun\n De lorean\n Dodge\n Eagle\n Ferrari\n Fiat\n Fisker\n Ford\n Freightliner\n Genesis\n Geo\n GMC\n Honda\n Hyundai\n Infiniti\n Isuzu\n Jaguar\n Jeep\n Karma\n Kia\n Lamborghini\n Land rover\n Lexus\n Lincoln\n Lotus\n Maserati\n Maybach\n Mazda\n McLaren\n Mercedes-Benz\n Mercury\n Mini\n Mitsubishi\n Nissan\n Oldsmobile\n Plymouth\n Pontiac\n Porsche\n Ram\n Rolls-Royce\n Saab\n Saturn\n Scion\n Smart\n Srt\n Subaru\n Suzuki\n Tesla\n Toyota\n Volkswagen\n Volvo\n Yugo')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f57ea3b8-80cb-488f-aed9-e8d5f658ec48",
+      "comment": "",
+      "command": "click",
+      "target": "id=listingform-mainattributefields-100",
+      "targets": [
+        ["id=listingform-mainattributefields-100", "id"],
+        ["name=ListingForm[mainAttributeFields][100]", "name"],
+        ["css=#listingform-mainattributefields-100", "css:finder"],
+        ["xpath=//input[@id='listingform-mainattributefields-100']", "xpath:attributes"],
+        ["xpath=//div[@id='w1']/div[3]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dc62f25c-e78f-4fc5-8598-a7f1c82b3a8f",
+      "comment": "",
+      "command": "type",
+      "target": "id=listingform-mainattributefields-100",
+      "targets": [
+        ["id=listingform-mainattributefields-100", "id"],
+        ["name=ListingForm[mainAttributeFields][100]", "name"],
+        ["css=#listingform-mainattributefields-100", "css:finder"],
+        ["xpath=//input[@id='listingform-mainattributefields-100']", "xpath:attributes"],
+        ["xpath=//div[@id='w1']/div[3]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/input", "xpath:position"]
+      ],
+      "value": "A3"
+    }, {
+      "id": "aacca7c1-a5ba-4a67-9a54-8e9fc3f9c3da",
+      "comment": "",
+      "command": "click",
+      "target": "id=listingform-mainattributefields-166",
+      "targets": [
+        ["id=listingform-mainattributefields-166", "id"],
+        ["name=ListingForm[mainAttributeFields][166]", "name"],
+        ["css=#listingform-mainattributefields-166", "css:finder"],
+        ["xpath=//select[@id='listingform-mainattributefields-166']", "xpath:attributes"],
+        ["xpath=//div[@id='w1']/div[4]/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/select", "xpath:position"],
+        ["xpath=//select[contains(.,'- Style -\n Bus\n Convertible\n Coupe\n Hatchback\n Mini-van\n Offroad\n Pickup\n Sedan\n Truck\n SUV\n Wagon\n Van\n Other')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f3b79d29-1f88-4bce-86b4-abccbd4d4dd5",
+      "comment": "",
+      "command": "select",
+      "target": "id=listingform-mainattributefields-166",
+      "targets": [],
+      "value": "label=regexp:\\sSedan"
+    }, {
+      "id": "e4e2a477-b394-4475-95f5-88f498aa4e9f",
+      "comment": "",
+      "command": "click",
+      "target": "id=listingform-mainattributefields-166",
+      "targets": [
+        ["id=listingform-mainattributefields-166", "id"],
+        ["name=ListingForm[mainAttributeFields][166]", "name"],
+        ["css=#listingform-mainattributefields-166", "css:finder"],
+        ["xpath=//select[@id='listingform-mainattributefields-166']", "xpath:attributes"],
+        ["xpath=//div[@id='w1']/div[4]/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/select", "xpath:position"],
+        ["xpath=//select[contains(.,'- Style -\n Bus\n Convertible\n Coupe\n Hatchback\n Mini-van\n Offroad\n Pickup\n Sedan\n Truck\n SUV\n Wagon\n Van\n Other')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7f7deb95-644b-436b-a77f-5c4fe41c382f",
+      "comment": "",
+      "command": "click",
+      "target": "id=listingform-mainattributefields-4",
+      "targets": [
+        ["id=listingform-mainattributefields-4", "id"],
+        ["name=ListingForm[mainAttributeFields][4]", "name"],
+        ["css=#listingform-mainattributefields-4", "css:finder"],
+        ["xpath=//input[@id='listingform-mainattributefields-4']", "xpath:attributes"],
+        ["xpath=//div[@id='w1']/div[5]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "38e3bc0e-6b81-44cc-95ab-2858fd988c82",
+      "comment": "",
+      "command": "type",
+      "target": "id=listingform-mainattributefields-4",
+      "targets": [
+        ["id=listingform-mainattributefields-4", "id"],
+        ["name=ListingForm[mainAttributeFields][4]", "name"],
+        ["css=#listingform-mainattributefields-4", "css:finder"],
+        ["xpath=//input[@id='listingform-mainattributefields-4']", "xpath:attributes"],
+        ["xpath=//div[@id='w1']/div[5]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div/input", "xpath:position"]
+      ],
+      "value": "2017"
+    }, {
+      "id": "39135027-3173-47c6-b088-9396b21a2d5e",
+      "comment": "",
+      "command": "click",
+      "target": "id=listingform-mainattributefields-167",
+      "targets": [
+        ["id=listingform-mainattributefields-167", "id"],
+        ["name=ListingForm[mainAttributeFields][167]", "name"],
+        ["css=#listingform-mainattributefields-167", "css:finder"],
+        ["xpath=//select[@id='listingform-mainattributefields-167']", "xpath:attributes"],
+        ["xpath=//div[@id='w1']/div[6]/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//div[6]/div/div/div/select", "xpath:position"],
+        ["xpath=//select[contains(.,'- Transmission -\n Automatic\n Manual')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "aae7e59e-9f7e-4369-9fb5-5ed50662fe13",
+      "comment": "",
+      "command": "select",
+      "target": "id=listingform-mainattributefields-167",
+      "targets": [],
+      "value": "label=regexp:\\sAutomatic"
+    }, {
+      "id": "0f5762df-4b71-4e5d-9b04-7c46bf4551ec",
+      "comment": "",
+      "command": "click",
+      "target": "id=listingform-mainattributefields-167",
+      "targets": [
+        ["id=listingform-mainattributefields-167", "id"],
+        ["name=ListingForm[mainAttributeFields][167]", "name"],
+        ["css=#listingform-mainattributefields-167", "css:finder"],
+        ["xpath=//select[@id='listingform-mainattributefields-167']", "xpath:attributes"],
+        ["xpath=//div[@id='w1']/div[6]/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//div[6]/div/div/div/select", "xpath:position"],
+        ["xpath=//select[contains(.,'- Transmission -\n Automatic\n Manual')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ceea6323-7b2d-4404-b6ac-1a0ebaa4b12b",
+      "comment": "",
+      "command": "click",
+      "target": "id=listingform-mainattributefields-168",
+      "targets": [
+        ["id=listingform-mainattributefields-168", "id"],
+        ["name=ListingForm[mainAttributeFields][168]", "name"],
+        ["css=#listingform-mainattributefields-168", "css:finder"],
+        ["xpath=//select[@id='listingform-mainattributefields-168']", "xpath:attributes"],
+        ["xpath=//div[@id='w1']/div[7]/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//div[7]/div/div/div/select", "xpath:position"],
+        ["xpath=//select[contains(.,'- Drive Type -\n Fwd\n Rwd\n Awd')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3fdda01c-d37e-475f-b189-df3d04de4041",
+      "comment": "",
+      "command": "select",
+      "target": "id=listingform-mainattributefields-168",
+      "targets": [],
+      "value": "label=regexp:\\sRwd"
+    }, {
+      "id": "5e05da6c-7346-4cd0-b77f-faa90175cb40",
+      "comment": "",
+      "command": "click",
+      "target": "id=listingform-mainattributefields-168",
+      "targets": [
+        ["id=listingform-mainattributefields-168", "id"],
+        ["name=ListingForm[mainAttributeFields][168]", "name"],
+        ["css=#listingform-mainattributefields-168", "css:finder"],
+        ["xpath=//select[@id='listingform-mainattributefields-168']", "xpath:attributes"],
+        ["xpath=//div[@id='w1']/div[7]/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//div[7]/div/div/div/select", "xpath:position"],
+        ["xpath=//select[contains(.,'- Drive Type -\n Fwd\n Rwd\n Awd')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "843bc526-c24a-4838-8389-605ecb254877",
+      "comment": "",
+      "command": "click",
+      "target": "id=listingform-mainattributefields-223",
+      "targets": [
+        ["id=listingform-mainattributefields-223", "id"],
+        ["name=ListingForm[mainAttributeFields][223]", "name"],
+        ["css=#listingform-mainattributefields-223", "css:finder"],
+        ["xpath=//select[@id='listingform-mainattributefields-223']", "xpath:attributes"],
+        ["xpath=//div[@id='w1']/div[8]/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//div[8]/div/div/div/select", "xpath:position"],
+        ["xpath=//select[contains(.,'- Fuel Type -\n Gas\n Diesel\n LPG\n Electric\n Other')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "876af2cc-7a4c-4865-9df2-9fcc014f0826",
+      "comment": "",
+      "command": "select",
+      "target": "id=listingform-mainattributefields-223",
+      "targets": [],
+      "value": "label=regexp:\\sGas"
+    }, {
+      "id": "42cb94d3-b288-4ed1-8e9b-3b414c1f411a",
+      "comment": "",
+      "command": "click",
+      "target": "id=listingform-mainattributefields-223",
+      "targets": [
+        ["id=listingform-mainattributefields-223", "id"],
+        ["name=ListingForm[mainAttributeFields][223]", "name"],
+        ["css=#listingform-mainattributefields-223", "css:finder"],
+        ["xpath=//select[@id='listingform-mainattributefields-223']", "xpath:attributes"],
+        ["xpath=//div[@id='w1']/div[8]/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//div[8]/div/div/div/select", "xpath:position"],
+        ["xpath=//select[contains(.,'- Fuel Type -\n Gas\n Diesel\n LPG\n Electric\n Other')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3ce8f74b-4e44-4f76-b184-641267685e2e",
+      "comment": "",
+      "command": "click",
+      "target": "id=save-step-2-btn",
+      "targets": [
+        ["id=save-step-2-btn", "id"],
+        ["css=.listing-step-2-form #save-step-2-btn", "css:finder"],
+        ["xpath=//button[@id='save-step-2-btn']", "xpath:attributes"],
+        ["xpath=//div[@id='step2']/div/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e3c54019-7289-4a02-b0dd-85bc24ca3e22",
+      "comment": "Input price and photos without rotation",
+      "command": "click",
+      "target": "id=listingform-price",
+      "targets": [
+        ["id=listingform-price", "id"],
+        ["name=ListingForm[price]", "name"],
+        ["css=#listingform-price", "css:finder"],
+        ["xpath=//input[@id='listingform-price']", "xpath:attributes"],
+        ["xpath=//form[@id='listingform-id-step-3']/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e6acb2ad-1126-4f07-b749-7107f953061d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.field-listingform-is_urgent .custom-control-label",
+      "targets": [
+        ["css=.field-listingform-is_urgent .custom-control-label", "css:finder"],
+        ["xpath=//form[@id='listingform-id-step-3']/div/div[3]/div/div/label", "xpath:idRelative"],
+        ["xpath=//form/div/div[3]/div/div/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Urgent Sale')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6b927944-a193-4367-907c-401b8ee10952",
+      "comment": "",
+      "command": "click",
+      "target": "css=.custom-radio:nth-child(1) > .custom-control-label",
+      "targets": [
+        ["css=.custom-radio:nth-child(1) > .custom-control-label", "css:finder"],
+        ["xpath=//div[@id='listingform-price_type']/div/label", "xpath:idRelative"],
+        ["xpath=//form/div[2]/div/div/div/div/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Fixed')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1ca31a0b-1b5c-48a9-bc6b-f9332f21bbf5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-upload",
+      "targets": [
+        ["css=.fa-upload", "css:finder"],
+        ["xpath=//div[@id='dropzoneInputW2']/div/i", "xpath:idRelative"],
+        ["xpath=//div/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e1d9f149-f856-4cba-a332-c376d77ab780",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "linkText=Remove file",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "cd8e30d4-ce1a-4dd2-9a99-13e1c0ba204d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.listing-step-3-form #save-step-2-btn",
+      "targets": [
+        ["css=.listing-step-3-form #save-step-2-btn", "css:finder"],
+        ["xpath=(//button[@id='save-step-2-btn'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='step3']/div/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7008e10f-af9d-4ed9-8e7b-e5aba65f9807",
+      "comment": "",
+      "command": "click",
+      "target": "id=listingform-otherattributefields-24",
+      "targets": [
+        ["id=listingform-otherattributefields-24", "id"],
+        ["name=ListingForm[otherAttributeFields][24]", "name"],
+        ["css=#listingform-otherattributefields-24", "css:finder"],
+        ["xpath=//input[@id='listingform-otherattributefields-24']", "xpath:attributes"],
+        ["xpath=//div[@id='w3']/div[2]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f41d78b6-ffaf-485b-a4c4-48292b39c26a",
+      "comment": "",
+      "command": "type",
+      "target": "id=listingform-otherattributefields-24",
+      "targets": [
+        ["id=listingform-otherattributefields-24", "id"],
+        ["name=ListingForm[otherAttributeFields][24]", "name"],
+        ["css=#listingform-otherattributefields-24", "css:finder"],
+        ["xpath=//input[@id='listingform-otherattributefields-24']", "xpath:attributes"],
+        ["xpath=//div[@id='w3']/div[2]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div/div/div/input", "xpath:position"]
+      ],
+      "value": "20000"
+    }, {
+      "id": "1e124f97-e607-4cfd-984e-acc8978b0be7",
+      "comment": "",
+      "command": "click",
+      "target": "id=listingform-otherattributefields-170",
+      "targets": [
+        ["id=listingform-otherattributefields-170", "id"],
+        ["name=ListingForm[otherAttributeFields][170]", "name"],
+        ["css=#listingform-otherattributefields-170", "css:finder"],
+        ["xpath=//select[@id='listingform-otherattributefields-170']", "xpath:attributes"],
+        ["xpath=//div[@id='w3']/div[3]/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/select", "xpath:position"],
+        ["xpath=//select[contains(.,'- Condition -\n New\n CPO\n Like New\n Excellent\n Good\n Fair\n Salvage')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1c2079f1-6ea7-4d31-ac98-cd895700de98",
+      "comment": "",
+      "command": "select",
+      "target": "id=listingform-otherattributefields-170",
+      "targets": [],
+      "value": "label=regexp:\\sLike\\sNew"
+    }, {
+      "id": "5d380c82-527c-4fea-9c47-5923970723a3",
+      "comment": "",
+      "command": "click",
+      "target": "id=listingform-otherattributefields-170",
+      "targets": [
+        ["id=listingform-otherattributefields-170", "id"],
+        ["name=ListingForm[otherAttributeFields][170]", "name"],
+        ["css=#listingform-otherattributefields-170", "css:finder"],
+        ["xpath=//select[@id='listingform-otherattributefields-170']", "xpath:attributes"],
+        ["xpath=//div[@id='w3']/div[3]/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/select", "xpath:position"],
+        ["xpath=//select[contains(.,'- Condition -\n New\n CPO\n Like New\n Excellent\n Good\n Fair\n Salvage')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5aee006e-d014-4765-800e-2caad03b285b",
+      "comment": "",
+      "command": "click",
+      "target": "id=listingform-otherattributefields-171",
+      "targets": [
+        ["id=listingform-otherattributefields-171", "id"],
+        ["name=ListingForm[otherAttributeFields][171]", "name"],
+        ["css=#listingform-otherattributefields-171", "css:finder"],
+        ["xpath=//select[@id='listingform-otherattributefields-171']", "xpath:attributes"],
+        ["xpath=//div[@id='w3']/div[4]/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div[4]/div/div/div/select", "xpath:position"],
+        ["xpath=//select[contains(.,'- Ownership Type -\n Owner\n Dealer')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d9735ebd-519e-48a5-9e18-3f588264515c",
+      "comment": "",
+      "command": "select",
+      "target": "id=listingform-otherattributefields-171",
+      "targets": [],
+      "value": "label=regexp:\\sDealer"
+    }, {
+      "id": "200f8bf8-ef98-4cb6-94b7-0c6c0ae48877",
+      "comment": "",
+      "command": "click",
+      "target": "id=listingform-otherattributefields-171",
+      "targets": [
+        ["id=listingform-otherattributefields-171", "id"],
+        ["name=ListingForm[otherAttributeFields][171]", "name"],
+        ["css=#listingform-otherattributefields-171", "css:finder"],
+        ["xpath=//select[@id='listingform-otherattributefields-171']", "xpath:attributes"],
+        ["xpath=//div[@id='w3']/div[4]/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div[4]/div/div/div/select", "xpath:position"],
+        ["xpath=//select[contains(.,'- Ownership Type -\n Owner\n Dealer')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5345279b-3e51-4fe5-8aef-936447c88750",
+      "comment": "",
+      "command": "click",
+      "target": "id=listingform-otherattributefields-172",
+      "targets": [
+        ["id=listingform-otherattributefields-172", "id"],
+        ["name=ListingForm[otherAttributeFields][172]", "name"],
+        ["css=#listingform-otherattributefields-172", "css:finder"],
+        ["xpath=//select[@id='listingform-otherattributefields-172']", "xpath:attributes"],
+        ["xpath=//div[@id='w3']/div[5]/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div/select", "xpath:position"],
+        ["xpath=//select[contains(.,'- Title Status -\n Clean\n Salvage\n Rebuilt\n Parts Only\n Lien\n Missing')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ceb88abd-d25d-4788-8a5c-8361c2f41bb0",
+      "comment": "",
+      "command": "select",
+      "target": "id=listingform-otherattributefields-172",
+      "targets": [],
+      "value": "label=regexp:\\sClean"
+    }, {
+      "id": "093594b2-74d1-4174-b9f5-4a19c64b61d9",
+      "comment": "",
+      "command": "click",
+      "target": "id=listingform-otherattributefields-172",
+      "targets": [
+        ["id=listingform-otherattributefields-172", "id"],
+        ["name=ListingForm[otherAttributeFields][172]", "name"],
+        ["css=#listingform-otherattributefields-172", "css:finder"],
+        ["xpath=//select[@id='listingform-otherattributefields-172']", "xpath:attributes"],
+        ["xpath=//div[@id='w3']/div[5]/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div/select", "xpath:position"],
+        ["xpath=//select[contains(.,'- Title Status -\n Clean\n Salvage\n Rebuilt\n Parts Only\n Lien\n Missing')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "88c2bfbb-6a4c-4748-a6b4-77fc5921372a",
+      "comment": "",
+      "command": "click",
+      "target": "id=listingform-otherattributefields-173",
+      "targets": [
+        ["id=listingform-otherattributefields-173", "id"],
+        ["name=ListingForm[otherAttributeFields][173]", "name"],
+        ["css=#listingform-otherattributefields-173", "css:finder"],
+        ["xpath=//input[@id='listingform-otherattributefields-173']", "xpath:attributes"],
+        ["xpath=//div[@id='w3']/div[6]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[6]/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "01452973-f218-4d3a-a1f6-e5f5b8a85348",
+      "comment": "",
+      "command": "type",
+      "target": "id=listingform-otherattributefields-173",
+      "targets": [
+        ["id=listingform-otherattributefields-173", "id"],
+        ["name=ListingForm[otherAttributeFields][173]", "name"],
+        ["css=#listingform-otherattributefields-173", "css:finder"],
+        ["xpath=//input[@id='listingform-otherattributefields-173']", "xpath:attributes"],
+        ["xpath=//div[@id='w3']/div[6]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[6]/div/div/div/input", "xpath:position"]
+      ],
+      "value": "4"
+    }, {
+      "id": "107e6d5b-a630-4302-8e90-0bb534d73d0f",
+      "comment": "",
+      "command": "click",
+      "target": "id=listingform-otherattributefields-174",
+      "targets": [
+        ["id=listingform-otherattributefields-174", "id"],
+        ["name=ListingForm[otherAttributeFields][174]", "name"],
+        ["css=#listingform-otherattributefields-174", "css:finder"],
+        ["xpath=//select[@id='listingform-otherattributefields-174']", "xpath:attributes"],
+        ["xpath=//div[@id='w3']/div[7]/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div[7]/div/div/div/select", "xpath:position"],
+        ["xpath=//select[contains(.,'- Financing -\n Financing Available\n No Financing Available')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "401be950-fc9b-459c-afef-f9a137ea65bf",
+      "comment": "",
+      "command": "select",
+      "target": "id=listingform-otherattributefields-174",
+      "targets": [],
+      "value": "label=regexp:\\sNo\\sFinancing\\sAvailable"
+    }, {
+      "id": "6405484e-49e7-4a10-8827-540ae6e49adf",
+      "comment": "",
+      "command": "click",
+      "target": "id=listingform-otherattributefields-174",
+      "targets": [
+        ["id=listingform-otherattributefields-174", "id"],
+        ["name=ListingForm[otherAttributeFields][174]", "name"],
+        ["css=#listingform-otherattributefields-174", "css:finder"],
+        ["xpath=//select[@id='listingform-otherattributefields-174']", "xpath:attributes"],
+        ["xpath=//div[@id='w3']/div[7]/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div[7]/div/div/div/select", "xpath:position"],
+        ["xpath=//select[contains(.,'- Financing -\n Financing Available\n No Financing Available')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "29c26c97-bd36-41fd-a3ff-3c959c29521d",
+      "comment": "",
+      "command": "click",
+      "target": "id=listingform-otherattributefields-175",
+      "targets": [
+        ["id=listingform-otherattributefields-175", "id"],
+        ["name=ListingForm[otherAttributeFields][175]", "name"],
+        ["css=#listingform-otherattributefields-175", "css:finder"],
+        ["xpath=//input[@id='listingform-otherattributefields-175']", "xpath:attributes"],
+        ["xpath=//div[@id='w3']/div[8]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[8]/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "beeed711-f4cb-4f40-a1ab-871f372bb5e3",
+      "comment": "",
+      "command": "type",
+      "target": "id=listingform-otherattributefields-175",
+      "targets": [
+        ["id=listingform-otherattributefields-175", "id"],
+        ["name=ListingForm[otherAttributeFields][175]", "name"],
+        ["css=#listingform-otherattributefields-175", "css:finder"],
+        ["xpath=//input[@id='listingform-otherattributefields-175']", "xpath:attributes"],
+        ["xpath=//div[@id='w3']/div[8]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[8]/div/div/div/input", "xpath:position"]
+      ],
+      "value": "4"
+    }, {
+      "id": "6cdb8bf0-eabd-4ebd-bc29-df9fdebfb109",
+      "comment": "",
+      "command": "click",
+      "target": "id=listingform-otherattributefields-176",
+      "targets": [
+        ["id=listingform-otherattributefields-176", "id"],
+        ["name=ListingForm[otherAttributeFields][176]", "name"],
+        ["css=#listingform-otherattributefields-176", "css:finder"],
+        ["xpath=//input[@id='listingform-otherattributefields-176']", "xpath:attributes"],
+        ["xpath=//div[@id='w3']/div[9]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[9]/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "209b34c7-b06c-4642-97b5-63a217892ca6",
+      "comment": "",
+      "command": "type",
+      "target": "id=listingform-otherattributefields-176",
+      "targets": [
+        ["id=listingform-otherattributefields-176", "id"],
+        ["name=ListingForm[otherAttributeFields][176]", "name"],
+        ["css=#listingform-otherattributefields-176", "css:finder"],
+        ["xpath=//input[@id='listingform-otherattributefields-176']", "xpath:attributes"],
+        ["xpath=//div[@id='w3']/div[9]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[9]/div/div/div/input", "xpath:position"]
+      ],
+      "value": "750"
+    }, {
+      "id": "fe7c2c22-5a23-4afb-bfb3-e6873527ffec",
+      "comment": "",
+      "command": "click",
+      "target": "id=listingform-otherattributefields-177",
+      "targets": [
+        ["id=listingform-otherattributefields-177", "id"],
+        ["name=ListingForm[otherAttributeFields][177]", "name"],
+        ["css=#listingform-otherattributefields-177", "css:finder"],
+        ["xpath=//select[@id='listingform-otherattributefields-177']", "xpath:attributes"],
+        ["xpath=//div[@id='w3']/div[10]/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//div[10]/div/div/div/select", "xpath:position"],
+        ["xpath=//select[contains(.,'- Vehicle Color -\n Beige\n Black\n Blue\n Brown\n Burgundy\n Charcoal\n Gold\n Gray\n Green\n Off White\n Orange\n Pink\n Purple\n Red\n Silver\n Tan\n Turquoise\n White\n Yellow')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4eea7078-b857-4f36-b2b3-035a35bb218f",
+      "comment": "",
+      "command": "click",
+      "target": "id=listingform-otherattributefields-176",
+      "targets": [
+        ["id=listingform-otherattributefields-176", "id"],
+        ["name=ListingForm[otherAttributeFields][176]", "name"],
+        ["css=#listingform-otherattributefields-176", "css:finder"],
+        ["xpath=//input[@id='listingform-otherattributefields-176']", "xpath:attributes"],
+        ["xpath=//div[@id='w3']/div[9]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[9]/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f959ef00-edac-459d-8266-2e06fbd40d19",
+      "comment": "",
+      "command": "click",
+      "target": "id=listingform-otherattributefields-176",
+      "targets": [
+        ["id=listingform-otherattributefields-176", "id"],
+        ["name=ListingForm[otherAttributeFields][176]", "name"],
+        ["css=#listingform-otherattributefields-176", "css:finder"],
+        ["xpath=//input[@id='listingform-otherattributefields-176']", "xpath:attributes"],
+        ["xpath=//div[@id='w3']/div[9]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[9]/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1a22c4f1-040a-4577-bdac-484a92b13849",
+      "comment": "",
+      "command": "type",
+      "target": "id=listingform-otherattributefields-176",
+      "targets": [
+        ["id=listingform-otherattributefields-176", "id"],
+        ["name=ListingForm[otherAttributeFields][176]", "name"],
+        ["css=#listingform-otherattributefields-176", "css:finder"],
+        ["xpath=//input[@id='listingform-otherattributefields-176']", "xpath:attributes"],
+        ["xpath=//div[@id='w3']/div[9]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[9]/div/div/div/input", "xpath:position"]
+      ],
+      "value": "1750"
+    }, {
+      "id": "493370df-7e44-409a-a394-b72ce5c11cd3",
+      "comment": "",
+      "command": "click",
+      "target": "id=listingform-otherattributefields-177",
+      "targets": [
+        ["id=listingform-otherattributefields-177", "id"],
+        ["name=ListingForm[otherAttributeFields][177]", "name"],
+        ["css=#listingform-otherattributefields-177", "css:finder"],
+        ["xpath=//select[@id='listingform-otherattributefields-177']", "xpath:attributes"],
+        ["xpath=//div[@id='w3']/div[10]/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//div[10]/div/div/div/select", "xpath:position"],
+        ["xpath=//select[contains(.,'- Vehicle Color -\n Beige\n Black\n Blue\n Brown\n Burgundy\n Charcoal\n Gold\n Gray\n Green\n Off White\n Orange\n Pink\n Purple\n Red\n Silver\n Tan\n Turquoise\n White\n Yellow')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d9e9e032-3b22-43c9-ae6e-209bfdc200fb",
+      "comment": "",
+      "command": "select",
+      "target": "id=listingform-otherattributefields-177",
+      "targets": [],
+      "value": "label=regexp:\\sBlue"
+    }, {
+      "id": "b4c8d25b-59e0-4ad7-ad3b-00895a6fa357",
+      "comment": "",
+      "command": "click",
+      "target": "id=listingform-otherattributefields-177",
+      "targets": [
+        ["id=listingform-otherattributefields-177", "id"],
+        ["name=ListingForm[otherAttributeFields][177]", "name"],
+        ["css=#listingform-otherattributefields-177", "css:finder"],
+        ["xpath=//select[@id='listingform-otherattributefields-177']", "xpath:attributes"],
+        ["xpath=//div[@id='w3']/div[10]/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//div[10]/div/div/div/select", "xpath:position"],
+        ["xpath=//select[contains(.,'- Vehicle Color -\n Beige\n Black\n Blue\n Brown\n Burgundy\n Charcoal\n Gold\n Gray\n Green\n Off White\n Orange\n Pink\n Purple\n Red\n Silver\n Tan\n Turquoise\n White\n Yellow')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4b441935-5c80-4a4d-ac9d-fd3a9e6df4bd",
+      "comment": "",
+      "command": "click",
+      "target": "id=save-step-4-btn",
+      "targets": [
+        ["id=save-step-4-btn", "id"],
+        ["css=#save-step-4-btn", "css:finder"],
+        ["xpath=//button[@id='save-step-4-btn']", "xpath:attributes"],
+        ["xpath=//div[@id='step4']/div/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8a3f420b-9abb-4a17-9fef-d7f58318765c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-lg-12 > #save-step-5-btn",
+      "targets": [
+        ["css=.col-lg-12 > #save-step-5-btn", "css:finder"],
+        ["xpath=(//button[@id='save-step-5-btn'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='step5']/div/div/div/div[4]/div/button", "xpath:idRelative"],
+        ["xpath=//div[4]/div/button", "xpath:position"]
+      ],
+      "value": "Publish your listing"
+    }, {
+      "id": "cc51e489-a1e2-4d0a-a120-d3babf366fd1",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.d-none > .mt-2 > .btn-cyan",
+      "targets": [],
+      "value": "30000"
+    }]
+  }, {
+    "id": "2f8be635-90a9-4ed1-8024-8e0623a9c8ac",
+    "name": "Publish Listing No picture",
+    "commands": [{
+      "id": "2a2f0975-f736-422c-9ce2-ec8755e9003b",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a5c52a25-19e8-4bcc-9952-ee09e57df83d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1608x1029",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2ab53c4e-2bc1-42fb-910d-2c42f9ab4cc9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.main-nav:nth-child(1) .nav-item:nth-child(2) > .btn:nth-child(1)",
+      "targets": [
+        ["linkText=Login/Sign Up", "linkText"],
+        ["css=.main-nav:nth-child(1) .nav-item:nth-child(2) > .btn:nth-child(1)", "css:finder"],
+        ["xpath=(//a[contains(text(),'Login/Sign Up')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/site/login')])[3]", "xpath:href"],
+        ["xpath=//div[2]/div/div[2]/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "00aac1af-be80-4a41-9030-23129ec5d430",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginform-email",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5a4520d8-c9b4-44bb-9c52-84e6b4e3495f",
+      "comment": "",
+      "command": "type",
+      "target": "id=loginform-email",
+      "targets": [
+        ["id=loginform-email", "id"],
+        ["name=LoginForm[email]", "name"],
+        ["css=#loginform-email", "css:finder"],
+        ["xpath=//input[@id='loginform-email']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form-modal']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "admin"
+    }, {
+      "id": "8a36e488-38fa-43c8-a260-f10edac9cf67",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginform-password",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3b10b240-0b86-4ded-82af-92514b1d9571",
+      "comment": "",
+      "command": "type",
+      "target": "id=loginform-password",
+      "targets": [
+        ["id=loginform-password", "id"],
+        ["name=LoginForm[password]", "name"],
+        ["css=#loginform-password", "css:finder"],
+        ["xpath=//input[@id='loginform-password']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form-modal']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "singularity.is"
+    }, {
+      "id": "82a78405-2c4c-44ed-9539-62d2559aeb28",
+      "comment": "",
+      "command": "click",
+      "target": "name=login-button",
+      "targets": [
+        ["name=login-button", "name"],
+        ["css=.btn-modal-control-submit", "css:finder"],
+        ["xpath=//button[@name='login-button']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form-modal']/div[4]/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8171fe2c-72de-48ab-8fbf-400923ae01b0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.main-nav .flex-w-150 > .btn",
+      "targets": [
+        ["css=.main-nav .flex-w-150 > .btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Publish')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/listing/create')]", "xpath:href"],
+        ["xpath=//div[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a2800252-b7fd-410c-bb5c-c506c8c3054a",
+      "comment": "",
+      "command": "click",
+      "target": "id=listingform-title",
+      "targets": [
+        ["id=listingform-title", "id"],
+        ["name=ListingForm[title]", "name"],
+        ["css=.input-group > #listingform-title", "css:finder"],
+        ["xpath=//input[@id='listingform-title']", "xpath:attributes"],
+        ["xpath=//form[@id='listingform-id-step-1']/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "be0a08f7-a3a3-4b82-8ba1-ebb9d774d217",
+      "comment": "",
+      "command": "type",
+      "target": "id=listingform-title",
+      "targets": [
+        ["id=listingform-title", "id"],
+        ["name=ListingForm[title]", "name"],
+        ["css=.input-group > #listingform-title", "css:finder"],
+        ["xpath=//input[@id='listingform-title']", "xpath:attributes"],
+        ["xpath=//form[@id='listingform-id-step-1']/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Looking for a flat"
+    }, {
+      "id": "7be58e76-f83e-4465-b55c-9c5ce59c4f52",
+      "comment": "",
+      "command": "click",
+      "target": "css=#manual-category-selector-widget > .list-group-item:nth-child(2) > .text-gray-dark",
+      "targets": [
+        ["linkText=Real Estate", "linkText"],
+        ["css=#manual-category-selector-widget > .list-group-item:nth-child(2) > .text-gray-dark", "css:finder"],
+        ["xpath=(//a[contains(text(),'Real Estate')])[5]", "xpath:link"],
+        ["xpath=//ul[@id='manual-category-selector-widget']/li[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:void(0)')])[13]", "xpath:href"],
+        ["xpath=//div[3]/div/div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d324be7b-ba5e-4da7-9a88-fba3ab666b44",
+      "comment": "",
+      "command": "click",
+      "target": "id=save-step-1-btn",
+      "targets": [
+        ["id=save-step-1-btn", "id"],
+        ["css=#save-step-1-btn", "css:finder"],
+        ["xpath=//button[@id='save-step-1-btn']", "xpath:attributes"],
+        ["xpath=//form[@id='listingform-id-step-1']/div[5]/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Save & Continue')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e31de572-3b84-424b-ab77-2fd65b949fbb",
+      "comment": "",
+      "command": "click",
+      "target": "id=listingform-listing_type",
+      "targets": [
+        ["id=listingform-listing_type", "id"],
+        ["name=ListingForm[listing_type]", "name"],
+        ["css=#listingform-listing_type", "css:finder"],
+        ["xpath=//select[@id='listingform-listing_type']", "xpath:attributes"],
+        ["xpath=//form[@id='listingform-id-step-2']/div/div[2]/select", "xpath:idRelative"],
+        ["xpath=//div[2]/select", "xpath:position"],
+        ["xpath=//select[contains(.,'Offer\nDemand\nRent')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "880f0db7-397b-4a4d-8908-35a9e34bf5f0",
+      "comment": "",
+      "command": "select",
+      "target": "id=listingform-listing_type",
+      "targets": [],
+      "value": "label=Demand"
+    }, {
+      "id": "b96664cb-7e57-4260-b8c5-2adcc9603563",
+      "comment": "",
+      "command": "click",
+      "target": "id=listingform-listing_type",
+      "targets": [
+        ["id=listingform-listing_type", "id"],
+        ["name=ListingForm[listing_type]", "name"],
+        ["css=#listingform-listing_type", "css:finder"],
+        ["xpath=//select[@id='listingform-listing_type']", "xpath:attributes"],
+        ["xpath=//form[@id='listingform-id-step-2']/div/div[2]/select", "xpath:idRelative"],
+        ["xpath=//div[2]/select", "xpath:position"],
+        ["xpath=//select[contains(.,'Offer\nDemand\nRent')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e791fc2d-bc7b-4132-8cb5-420320b8a0d8",
+      "comment": "",
+      "command": "click",
+      "target": "id=listingform-short_description",
+      "targets": [
+        ["id=listingform-short_description", "id"],
+        ["name=ListingForm[short_description]", "name"],
+        ["css=#listingform-short_description", "css:finder"],
+        ["xpath=//input[@id='listingform-short_description']", "xpath:attributes"],
+        ["xpath=//form[@id='listingform-id-step-2']/div[3]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a0427af5-55da-4c0a-95f1-fe750af9b9fc",
+      "comment": "",
+      "command": "type",
+      "target": "id=listingform-short_description",
+      "targets": [
+        ["id=listingform-short_description", "id"],
+        ["name=ListingForm[short_description]", "name"],
+        ["css=#listingform-short_description", "css:finder"],
+        ["xpath=//input[@id='listingform-short_description']", "xpath:attributes"],
+        ["xpath=//form[@id='listingform-id-step-2']/div[3]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": "Small flat for two, Low budget "
+    }, {
+      "id": "32d51d11-8370-4345-bba7-17fe6e1168f1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.gm-style:nth-child(1) > div:nth-child(1) > div:nth-child(3)",
+      "targets": [
+        ["css=.gm-style:nth-child(1) > div:nth-child(1) > div:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='mapw0-map-canvas']/div/div/div/div[3]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div/div/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4e81a9d1-71c9-4215-9ef7-ab13c5c5df83",
+      "comment": "",
+      "command": "click",
+      "target": "id=address-geo-locator-btn",
+      "targets": [
+        ["id=address-geo-locator-btn", "id"],
+        ["css=#address-geo-locator-btn", "css:finder"],
+        ["xpath=//button[@id='address-geo-locator-btn']", "xpath:attributes"],
+        ["xpath=//form[@id='listingform-id-step-2']/div[4]/div[2]/div[5]/button", "xpath:idRelative"],
+        ["xpath=//div[5]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Locate on map')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c038a683-e4c6-4267-82d9-db1f593a64ad",
+      "comment": "",
+      "command": "click",
+      "target": "id=listingform-mainattributefields-250",
+      "targets": [
+        ["id=listingform-mainattributefields-250", "id"],
+        ["name=ListingForm[mainAttributeFields][250]", "name"],
+        ["css=#listingform-mainattributefields-250", "css:finder"],
+        ["xpath=//select[@id='listingform-mainattributefields-250']", "xpath:attributes"],
+        ["xpath=//div[@id='w1']/div[2]/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//div/div/div/select", "xpath:position"],
+        ["xpath=//select[contains(.,'- Real Estate Type -\n Condo\n House\n Townhouse\n Multi-Family\n Land\n Commercial Property')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "232b5239-618e-44d4-a375-95df218e61be",
+      "comment": "",
+      "command": "select",
+      "target": "id=listingform-mainattributefields-250",
+      "targets": [],
+      "value": "label=regexp:\\sCondo"
+    }, {
+      "id": "ce15e0b3-a371-4905-92ec-adbd15a1f9f2",
+      "comment": "",
+      "command": "click",
+      "target": "id=listingform-mainattributefields-250",
+      "targets": [
+        ["id=listingform-mainattributefields-250", "id"],
+        ["name=ListingForm[mainAttributeFields][250]", "name"],
+        ["css=#listingform-mainattributefields-250", "css:finder"],
+        ["xpath=//select[@id='listingform-mainattributefields-250']", "xpath:attributes"],
+        ["xpath=//div[@id='w1']/div[2]/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//div/div/div/select", "xpath:position"],
+        ["xpath=//select[contains(.,'- Real Estate Type -\n Condo\n House\n Townhouse\n Multi-Family\n Land\n Commercial Property')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "aee4361d-a311-40d7-b66e-e091ec4342b2",
+      "comment": "",
+      "command": "click",
+      "target": "id=listingform-mainattributefields-206",
+      "targets": [
+        ["id=listingform-mainattributefields-206", "id"],
+        ["name=ListingForm[mainAttributeFields][206]", "name"],
+        ["css=#listingform-mainattributefields-206", "css:finder"],
+        ["xpath=//input[@id='listingform-mainattributefields-206']", "xpath:attributes"],
+        ["xpath=//div[@id='w1']/div[3]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5aeaae63-dbc4-447a-9965-e81bee216473",
+      "comment": "",
+      "command": "type",
+      "target": "id=listingform-mainattributefields-206",
+      "targets": [
+        ["id=listingform-mainattributefields-206", "id"],
+        ["name=ListingForm[mainAttributeFields][206]", "name"],
+        ["css=#listingform-mainattributefields-206", "css:finder"],
+        ["xpath=//input[@id='listingform-mainattributefields-206']", "xpath:attributes"],
+        ["xpath=//div[@id='w1']/div[3]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/input", "xpath:position"]
+      ],
+      "value": "1"
+    }, {
+      "id": "6f53f137-a60f-41c2-8c92-126d1f7cf3ec",
+      "comment": "",
+      "command": "click",
+      "target": "id=listingform-mainattributefields-207",
+      "targets": [
+        ["id=listingform-mainattributefields-207", "id"],
+        ["name=ListingForm[mainAttributeFields][207]", "name"],
+        ["css=#listingform-mainattributefields-207", "css:finder"],
+        ["xpath=//input[@id='listingform-mainattributefields-207']", "xpath:attributes"],
+        ["xpath=//div[@id='w1']/div[4]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e8dbede7-6fe1-44e4-8f30-bdacc8d30954",
+      "comment": "",
+      "command": "type",
+      "target": "id=listingform-mainattributefields-207",
+      "targets": [
+        ["id=listingform-mainattributefields-207", "id"],
+        ["name=ListingForm[mainAttributeFields][207]", "name"],
+        ["css=#listingform-mainattributefields-207", "css:finder"],
+        ["xpath=//input[@id='listingform-mainattributefields-207']", "xpath:attributes"],
+        ["xpath=//div[@id='w1']/div[4]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/input", "xpath:position"]
+      ],
+      "value": "1"
+    }, {
+      "id": "26080fdd-0fb4-4de5-878a-07692c1f66a9",
+      "comment": "",
+      "command": "click",
+      "target": "id=listingform-mainattributefields-208",
+      "targets": [
+        ["id=listingform-mainattributefields-208", "id"],
+        ["name=ListingForm[mainAttributeFields][208]", "name"],
+        ["css=#listingform-mainattributefields-208", "css:finder"],
+        ["xpath=//select[@id='listingform-mainattributefields-208']", "xpath:attributes"],
+        ["xpath=//div[@id='w1']/div[5]/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div/select", "xpath:position"],
+        ["xpath=//select[contains(.,'- Parking spots -\n 0\n 1\n 2\n 3\n 4\n 4+')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "46754f8d-5f6c-464c-aa27-29aa19080893",
+      "comment": "",
+      "command": "select",
+      "target": "id=listingform-mainattributefields-208",
+      "targets": [],
+      "value": "label=regexp:\\s0"
+    }, {
+      "id": "c562d9df-285b-40be-81de-d75fc1177bc8",
+      "comment": "",
+      "command": "click",
+      "target": "id=listingform-mainattributefields-208",
+      "targets": [
+        ["id=listingform-mainattributefields-208", "id"],
+        ["name=ListingForm[mainAttributeFields][208]", "name"],
+        ["css=#listingform-mainattributefields-208", "css:finder"],
+        ["xpath=//select[@id='listingform-mainattributefields-208']", "xpath:attributes"],
+        ["xpath=//div[@id='w1']/div[5]/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div/select", "xpath:position"],
+        ["xpath=//select[contains(.,'- Parking spots -\n 0\n 1\n 2\n 3\n 4\n 4+')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c2562f71-50c0-45da-a9cb-86b486c96a93",
+      "comment": "",
+      "command": "click",
+      "target": "id=listingform-mainattributefields-58",
+      "targets": [
+        ["id=listingform-mainattributefields-58", "id"],
+        ["name=ListingForm[mainAttributeFields][58]", "name"],
+        ["css=#listingform-mainattributefields-58", "css:finder"],
+        ["xpath=//input[@id='listingform-mainattributefields-58']", "xpath:attributes"],
+        ["xpath=//div[@id='w1']/div[6]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[6]/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "77519e39-9601-40e5-b042-3e051be477ee",
+      "comment": "",
+      "command": "type",
+      "target": "id=listingform-mainattributefields-58",
+      "targets": [
+        ["id=listingform-mainattributefields-58", "id"],
+        ["name=ListingForm[mainAttributeFields][58]", "name"],
+        ["css=#listingform-mainattributefields-58", "css:finder"],
+        ["xpath=//input[@id='listingform-mainattributefields-58']", "xpath:attributes"],
+        ["xpath=//div[@id='w1']/div[6]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[6]/div/div/div/input", "xpath:position"]
+      ],
+      "value": "70"
+    }, {
+      "id": "fa5a2ce1-b790-4881-828a-962225db1dd3",
+      "comment": "",
+      "command": "click",
+      "target": "id=listingform-mainattributefields-213",
+      "targets": [
+        ["id=listingform-mainattributefields-213", "id"],
+        ["name=ListingForm[mainAttributeFields][213]", "name"],
+        ["css=#listingform-mainattributefields-213", "css:finder"],
+        ["xpath=//select[@id='listingform-mainattributefields-213']", "xpath:attributes"],
+        ["xpath=//div[@id='w1']/div[7]/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//div[7]/div/div/div/select", "xpath:position"],
+        ["xpath=//select[contains(.,'- Laundry Room -\n In - Unit Laundry\n On The Same Floor\n In The Building\n Off Site')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6ed1c26b-ee10-4e8c-9585-2db74e8e28b0",
+      "comment": "",
+      "command": "select",
+      "target": "id=listingform-mainattributefields-213",
+      "targets": [],
+      "value": "label=regexp:\\sIn\\sThe\\sBuilding"
+    }, {
+      "id": "fe251d0d-a1e8-45b8-9a88-2ac289f2cce5",
+      "comment": "",
+      "command": "click",
+      "target": "id=listingform-mainattributefields-213",
+      "targets": [
+        ["id=listingform-mainattributefields-213", "id"],
+        ["name=ListingForm[mainAttributeFields][213]", "name"],
+        ["css=#listingform-mainattributefields-213", "css:finder"],
+        ["xpath=//select[@id='listingform-mainattributefields-213']", "xpath:attributes"],
+        ["xpath=//div[@id='w1']/div[7]/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//div[7]/div/div/div/select", "xpath:position"],
+        ["xpath=//select[contains(.,'- Laundry Room -\n In - Unit Laundry\n On The Same Floor\n In The Building\n Off Site')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4169c478-e56b-43af-a4e8-a6052780855a",
+      "comment": "",
+      "command": "click",
+      "target": "id=listingform-mainattributefields-216",
+      "targets": [
+        ["id=listingform-mainattributefields-216", "id"],
+        ["name=ListingForm[mainAttributeFields][216]", "name"],
+        ["css=#listingform-mainattributefields-216", "css:finder"],
+        ["xpath=//select[@id='listingform-mainattributefields-216']", "xpath:attributes"],
+        ["xpath=//div[@id='w1']/div[8]/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//div[8]/div/div/div/select", "xpath:position"],
+        ["xpath=//select[contains(.,'- Max HOA Fees -\n No HOA\n 25 $ / Month\n 50  $ / Month\n 75 $ / Month\n 100  $ / Month\n 150 $ / Month\n 200 $ / Month\n 250 $ / Month\n 300 $ / Month\n 400 $ / Month\n 500 $ / Month\n 600 $ / Month\n 700 $ / Month\n 800 $ / Month\n 1000+  $ / Month')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5af11458-f2b7-4a78-8146-aaf1fe9d5d43",
+      "comment": "",
+      "command": "select",
+      "target": "id=listingform-mainattributefields-216",
+      "targets": [],
+      "value": "label=regexp:\\sNo\\sHOA"
+    }, {
+      "id": "5c0616eb-f35e-4f02-bb17-338587592b17",
+      "comment": "",
+      "command": "click",
+      "target": "id=listingform-mainattributefields-216",
+      "targets": [
+        ["id=listingform-mainattributefields-216", "id"],
+        ["name=ListingForm[mainAttributeFields][216]", "name"],
+        ["css=#listingform-mainattributefields-216", "css:finder"],
+        ["xpath=//select[@id='listingform-mainattributefields-216']", "xpath:attributes"],
+        ["xpath=//div[@id='w1']/div[8]/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//div[8]/div/div/div/select", "xpath:position"],
+        ["xpath=//select[contains(.,'- Max HOA Fees -\n No HOA\n 25 $ / Month\n 50  $ / Month\n 75 $ / Month\n 100  $ / Month\n 150 $ / Month\n 200 $ / Month\n 250 $ / Month\n 300 $ / Month\n 400 $ / Month\n 500 $ / Month\n 600 $ / Month\n 700 $ / Month\n 800 $ / Month\n 1000+  $ / Month')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "38b6bf5d-4cb6-44a4-b281-6d2ff8791e37",
+      "comment": "",
+      "command": "click",
+      "target": "id=listingform-mainattributefields-217",
+      "targets": [
+        ["id=listingform-mainattributefields-217", "id"],
+        ["name=ListingForm[mainAttributeFields][217]", "name"],
+        ["css=#listingform-mainattributefields-217", "css:finder"],
+        ["xpath=//select[@id='listingform-mainattributefields-217']", "xpath:attributes"],
+        ["xpath=//div[@id='w1']/div[9]/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//div[9]/div/div/div/select", "xpath:position"],
+        ["xpath=//select[contains(.,'- Basement -\n No Basement\n Unfinished Basement\n Finished Basement')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e1d22028-b82e-4b42-881e-5d6b9aece339",
+      "comment": "",
+      "command": "select",
+      "target": "id=listingform-mainattributefields-217",
+      "targets": [],
+      "value": "label=regexp:\\sNo\\sBasement"
+    }, {
+      "id": "22a4f53e-69e5-49ad-a9a4-751d3c768865",
+      "comment": "",
+      "command": "click",
+      "target": "id=listingform-mainattributefields-217",
+      "targets": [
+        ["id=listingform-mainattributefields-217", "id"],
+        ["name=ListingForm[mainAttributeFields][217]", "name"],
+        ["css=#listingform-mainattributefields-217", "css:finder"],
+        ["xpath=//select[@id='listingform-mainattributefields-217']", "xpath:attributes"],
+        ["xpath=//div[@id='w1']/div[9]/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//div[9]/div/div/div/select", "xpath:position"],
+        ["xpath=//select[contains(.,'- Basement -\n No Basement\n Unfinished Basement\n Finished Basement')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e79c0405-420b-45e7-8f91-ca29ff6686fa",
+      "comment": "",
+      "command": "click",
+      "target": "id=listingform-mainattributefields-218",
+      "targets": [
+        ["id=listingform-mainattributefields-218", "id"],
+        ["name=ListingForm[mainAttributeFields][218]", "name"],
+        ["css=#listingform-mainattributefields-218", "css:finder"],
+        ["xpath=//input[@id='listingform-mainattributefields-218']", "xpath:attributes"],
+        ["xpath=//div[@id='w1']/div[10]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[10]/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "23bfbcca-f6c6-415e-a764-91d147cf291a",
+      "comment": "",
+      "command": "type",
+      "target": "id=listingform-mainattributefields-218",
+      "targets": [
+        ["id=listingform-mainattributefields-218", "id"],
+        ["name=ListingForm[mainAttributeFields][218]", "name"],
+        ["css=#listingform-mainattributefields-218", "css:finder"],
+        ["xpath=//input[@id='listingform-mainattributefields-218']", "xpath:attributes"],
+        ["xpath=//div[@id='w1']/div[10]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[10]/div/div/div/input", "xpath:position"]
+      ],
+      "value": "1"
+    }, {
+      "id": "298498f4-e374-4436-bba8-ff88a3ab633f",
+      "comment": "",
+      "command": "click",
+      "target": "id=listingform-mainattributefields-219",
+      "targets": [
+        ["id=listingform-mainattributefields-219", "id"],
+        ["name=ListingForm[mainAttributeFields][219]", "name"],
+        ["css=#listingform-mainattributefields-219", "css:finder"],
+        ["xpath=//select[@id='listingform-mainattributefields-219']", "xpath:attributes"],
+        ["xpath=//div[@id='w1']/div[11]/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//div[11]/div/div/div/select", "xpath:position"],
+        ["xpath=//select[contains(.,'- View -\n City\n Park\n Mountain\n Water')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "750ffb9e-f9cf-4ceb-8bbf-5d37ce24ff4a",
+      "comment": "",
+      "command": "select",
+      "target": "id=listingform-mainattributefields-219",
+      "targets": [],
+      "value": "label=regexp:\\sCity"
+    }, {
+      "id": "310fb1e1-e0e6-4dbb-baae-6c313db60681",
+      "comment": "",
+      "command": "click",
+      "target": "id=listingform-mainattributefields-219",
+      "targets": [
+        ["id=listingform-mainattributefields-219", "id"],
+        ["name=ListingForm[mainAttributeFields][219]", "name"],
+        ["css=#listingform-mainattributefields-219", "css:finder"],
+        ["xpath=//select[@id='listingform-mainattributefields-219']", "xpath:attributes"],
+        ["xpath=//div[@id='w1']/div[11]/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//div[11]/div/div/div/select", "xpath:position"],
+        ["xpath=//select[contains(.,'- View -\n City\n Park\n Mountain\n Water')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9fc7250b-d8aa-4b01-a2e8-86117973a518",
+      "comment": "",
+      "command": "click",
+      "target": "id=listingform-mainattributefields-220",
+      "targets": [
+        ["id=listingform-mainattributefields-220", "id"],
+        ["name=ListingForm[mainAttributeFields][220]", "name"],
+        ["css=#listingform-mainattributefields-220", "css:finder"],
+        ["xpath=//select[@id='listingform-mainattributefields-220']", "xpath:attributes"],
+        ["xpath=//div[@id='w1']/div[12]/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//div[12]/div/div/div/select", "xpath:position"],
+        ["xpath=//select[contains(.,'- Credit Check -\n Required\n Not Required')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ae2f09e9-cc3d-4620-8a0d-05ad6ed45be9",
+      "comment": "",
+      "command": "select",
+      "target": "id=listingform-mainattributefields-220",
+      "targets": [],
+      "value": "label=regexp:\\sNot\\sRequired"
+    }, {
+      "id": "33177d9c-52ed-4447-a389-93d2457a9fbc",
+      "comment": "",
+      "command": "click",
+      "target": "id=listingform-mainattributefields-220",
+      "targets": [
+        ["id=listingform-mainattributefields-220", "id"],
+        ["name=ListingForm[mainAttributeFields][220]", "name"],
+        ["css=#listingform-mainattributefields-220", "css:finder"],
+        ["xpath=//select[@id='listingform-mainattributefields-220']", "xpath:attributes"],
+        ["xpath=//div[@id='w1']/div[12]/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//div[12]/div/div/div/select", "xpath:position"],
+        ["xpath=//select[contains(.,'- Credit Check -\n Required\n Not Required')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "eabd5cbd-a0fb-426a-82d5-b499e9a906e8",
+      "comment": "",
+      "command": "click",
+      "target": "id=listingform-mainattributefields-221",
+      "targets": [
+        ["id=listingform-mainattributefields-221", "id"],
+        ["name=ListingForm[mainAttributeFields][221]", "name"],
+        ["css=#listingform-mainattributefields-221", "css:finder"],
+        ["xpath=//select[@id='listingform-mainattributefields-221']", "xpath:attributes"],
+        ["xpath=//div[@id='w1']/div[13]/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//div[13]/div/div/div/select", "xpath:position"],
+        ["xpath=//select[contains(.,'- Days On Market -\n 7 Days\n 14 Days\n 30 Days\n 2 Months\n 3 Months\n 6 Months\n 12 Months\n 12 Months +')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "95552d14-5274-491e-81db-1c066340cd35",
+      "comment": "",
+      "command": "select",
+      "target": "id=listingform-mainattributefields-221",
+      "targets": [],
+      "value": "label=regexp:\\s7\\sDays"
+    }, {
+      "id": "b751a2d4-702c-46a0-b7df-311af36d7f61",
+      "comment": "",
+      "command": "click",
+      "target": "id=listingform-mainattributefields-221",
+      "targets": [
+        ["id=listingform-mainattributefields-221", "id"],
+        ["name=ListingForm[mainAttributeFields][221]", "name"],
+        ["css=#listingform-mainattributefields-221", "css:finder"],
+        ["xpath=//select[@id='listingform-mainattributefields-221']", "xpath:attributes"],
+        ["xpath=//div[@id='w1']/div[13]/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//div[13]/div/div/div/select", "xpath:position"],
+        ["xpath=//select[contains(.,'- Days On Market -\n 7 Days\n 14 Days\n 30 Days\n 2 Months\n 3 Months\n 6 Months\n 12 Months\n 12 Months +')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f9d9d1a8-31a2-4802-89a5-36f8a6979ccf",
+      "comment": "",
+      "command": "click",
+      "target": "id=save-step-2-btn",
+      "targets": [
+        ["id=save-step-2-btn", "id"],
+        ["css=.listing-step-2-form #save-step-2-btn", "css:finder"],
+        ["xpath=//button[@id='save-step-2-btn']", "xpath:attributes"],
+        ["xpath=//div[@id='step2']/div/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "51dcb013-67dd-431d-ac8e-c46b0b6c73cc",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=save-step-2-btn",
+      "targets": [
+        ["id=save-step-2-btn", "id"],
+        ["css=.listing-step-2-form #save-step-2-btn", "css:finder"],
+        ["xpath=//button[@id='save-step-2-btn']", "xpath:attributes"],
+        ["xpath=//div[@id='step2']/div/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "40f90e07-4f3b-408d-844a-7796c02b7db0",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=save-step-2-btn",
+      "targets": [
+        ["id=save-step-2-btn", "id"],
+        ["css=.listing-step-2-form #save-step-2-btn", "css:finder"],
+        ["xpath=//button[@id='save-step-2-btn']", "xpath:attributes"],
+        ["xpath=//div[@id='step2']/div/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "45499704-9855-49ee-8ce1-06e86a625525",
+      "comment": "",
+      "command": "click",
+      "target": "css=.custom-control:nth-child(2) > .custom-control-label",
+      "targets": [
+        ["css=.custom-control:nth-child(2) > .custom-control-label", "css:finder"],
+        ["xpath=//div[@id='listingform-price_type']/div[2]/label", "xpath:idRelative"],
+        ["xpath=//div[2]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Negotiable')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1e92f3d8-8e03-4729-88c2-e33a7c62eb57",
+      "comment": "",
+      "command": "click",
+      "target": "css=.listing-step-3-form #save-step-2-btn",
+      "targets": [
+        ["css=.listing-step-3-form #save-step-2-btn", "css:finder"],
+        ["xpath=(//button[@id='save-step-2-btn'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='step3']/div/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "21e54b8a-ae03-4787-9717-69aba6d07ff8",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.listing-step-3-form #save-step-2-btn",
+      "targets": [
+        ["css=.listing-step-3-form #save-step-2-btn", "css:finder"],
+        ["xpath=(//button[@id='save-step-2-btn'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='step3']/div/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a7a7a7f9-7c41-4081-a029-266e670ae14b",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.listing-step-3-form #save-step-2-btn",
+      "targets": [
+        ["css=.listing-step-3-form #save-step-2-btn", "css:finder"],
+        ["xpath=(//button[@id='save-step-2-btn'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='step3']/div/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7d6555ac-4ae9-426b-bdf7-51c99cd2e716",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b64aaca7-ae51-4336-966c-24c8f9008e5a",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=4",
+      "targets": [
+        ["index=4"]
+      ],
+      "value": ""
+    }, {
+      "id": "eb06fc13-351e-47e3-89f8-cafb999f3cef",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"],
+        ["xpath=//html[contains(.,'\n')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d1949b8e-f696-424c-9a10-30531356d2d6",
+      "comment": "",
+      "command": "editContent",
+      "target": "css=.cke_editable",
+      "targets": [
+        ["css=.cke_editable", "css:finder"],
+        ["xpath=//body", "xpath:position"],
+        ["xpath=//body[contains(.,'Young couple looking for a small flat downtown')]", "xpath:innerText"]
+      ],
+      "value": "<p>Young couple looking for a small flat downtown</p>"
+    }, {
+      "id": "75a51625-15b4-4778-ab06-364083469777",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "b7fb3749-fb88-43b6-a835-8f06686ce616",
+      "comment": "",
+      "command": "click",
+      "target": "id=listingform-otherattributefields-210",
+      "targets": [
+        ["id=listingform-otherattributefields-210", "id"],
+        ["name=ListingForm[otherAttributeFields][210]", "name"],
+        ["css=#listingform-otherattributefields-210", "css:finder"],
+        ["xpath=//select[@id='listingform-otherattributefields-210']", "xpath:attributes"],
+        ["xpath=//div[@id='w3']/div[2]/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div[2]/div/div/div/select", "xpath:position"],
+        ["xpath=//select[contains(.,'- Year Built -\n No Minimum\n 2019\n 2018\n 2017\n 2016\n 2015\n 2014\n 2010\n 2005\n 2000\n 1995\n 1990\n 1985\n 1980\n 1970\n 1960\n 1950\n 1940\n 1930\n 1920\n 1910\n 1900')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7476e7c9-e6c4-4b6c-ac79-0ef9e173ba42",
+      "comment": "",
+      "command": "select",
+      "target": "id=listingform-otherattributefields-210",
+      "targets": [],
+      "value": "label=regexp:\\s2000"
+    }, {
+      "id": "34ddaa0a-a4f9-4ac3-871a-d98e35bd5a4e",
+      "comment": "",
+      "command": "click",
+      "target": "id=listingform-otherattributefields-210",
+      "targets": [
+        ["id=listingform-otherattributefields-210", "id"],
+        ["name=ListingForm[otherAttributeFields][210]", "name"],
+        ["css=#listingform-otherattributefields-210", "css:finder"],
+        ["xpath=//select[@id='listingform-otherattributefields-210']", "xpath:attributes"],
+        ["xpath=//div[@id='w3']/div[2]/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div[2]/div/div/div/select", "xpath:position"],
+        ["xpath=//select[contains(.,'- Year Built -\n No Minimum\n 2019\n 2018\n 2017\n 2016\n 2015\n 2014\n 2010\n 2005\n 2000\n 1995\n 1990\n 1985\n 1980\n 1970\n 1960\n 1950\n 1940\n 1930\n 1920\n 1910\n 1900')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8693e318-afc6-4635-ade5-6052d4ab5a28",
+      "comment": "",
+      "command": "click",
+      "target": "id=listingform-otherattributefields-211",
+      "targets": [
+        ["id=listingform-otherattributefields-211", "id"],
+        ["name=ListingForm[otherAttributeFields][211]", "name"],
+        ["css=#listingform-otherattributefields-211", "css:finder"],
+        ["xpath=//select[@id='listingform-otherattributefields-211']", "xpath:attributes"],
+        ["xpath=//div[@id='w3']/div[3]/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/select", "xpath:position"],
+        ["xpath=//select[contains(.,'- Lot Size -\n 2000+ Sqft\n 4000+ Sqft\n 5000+ Sqft\n 7500+ Sqft\n 0.25+ Acre\n 0.5+ Acre\n 0.75+ Acre\n 1+ Acre\n 2+ Acre\n 3+ Acre\n 5+ Acre\n 10+ Acre')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "546c7229-c1a4-42d2-a35a-e0b4a215391d",
+      "comment": "",
+      "command": "click",
+      "target": "id=listingform-otherattributefields-211",
+      "targets": [
+        ["id=listingform-otherattributefields-211", "id"],
+        ["name=ListingForm[otherAttributeFields][211]", "name"],
+        ["css=#listingform-otherattributefields-211", "css:finder"],
+        ["xpath=//select[@id='listingform-otherattributefields-211']", "xpath:attributes"],
+        ["xpath=//div[@id='w3']/div[3]/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/select", "xpath:position"],
+        ["xpath=//select[contains(.,'- Lot Size -\n 2000+ Sqft\n 4000+ Sqft\n 5000+ Sqft\n 7500+ Sqft\n 0.25+ Acre\n 0.5+ Acre\n 0.75+ Acre\n 1+ Acre\n 2+ Acre\n 3+ Acre\n 5+ Acre\n 10+ Acre')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8fcac9d0-deb8-4fab-b462-4ff405e0e201",
+      "comment": "",
+      "command": "click",
+      "target": "id=listingform-otherattributefields-212",
+      "targets": [
+        ["id=listingform-otherattributefields-212", "id"],
+        ["name=ListingForm[otherAttributeFields][212]", "name"],
+        ["css=#listingform-otherattributefields-212", "css:finder"],
+        ["xpath=//select[@id='listingform-otherattributefields-212']", "xpath:attributes"],
+        ["xpath=//div[@id='w3']/div[4]/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/select", "xpath:position"],
+        ["xpath=//select[contains(.,'- Great Schools Rating -\n 1+\n 2+\n 3+\n 4+\n 5+\n 6+\n 7+\n 8+\n 9+\n 10')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f10adbba-9268-445e-9d1f-382bf69efb70",
+      "comment": "",
+      "command": "click",
+      "target": "id=listingform-otherattributefields-212",
+      "targets": [
+        ["id=listingform-otherattributefields-212", "id"],
+        ["name=ListingForm[otherAttributeFields][212]", "name"],
+        ["css=#listingform-otherattributefields-212", "css:finder"],
+        ["xpath=//select[@id='listingform-otherattributefields-212']", "xpath:attributes"],
+        ["xpath=//div[@id='w3']/div[4]/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/select", "xpath:position"],
+        ["xpath=//select[contains(.,'- Great Schools Rating -\n 1+\n 2+\n 3+\n 4+\n 5+\n 6+\n 7+\n 8+\n 9+\n 10')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9fabd51c-196a-4245-84f0-f18c58342625",
+      "comment": "",
+      "command": "click",
+      "target": "id=listingform-otherattributefields-214",
+      "targets": [
+        ["id=listingform-otherattributefields-214", "id"],
+        ["name=ListingForm[otherAttributeFields][214]", "name"],
+        ["css=#listingform-otherattributefields-214", "css:finder"],
+        ["xpath=//select[@id='listingform-otherattributefields-214']", "xpath:attributes"],
+        ["xpath=//div[@id='w3']/div[5]/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div[5]/div/div/div/select", "xpath:position"],
+        ["xpath=//select[contains(.,'- Status -\n Coming Soon\n Coming Soon + Active Listings\n Active')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "eb45a2c5-b0a8-4e6a-8ceb-94e1288b9d90",
+      "comment": "",
+      "command": "select",
+      "target": "id=listingform-otherattributefields-214",
+      "targets": [],
+      "value": "label=regexp:\\sActive"
+    }, {
+      "id": "70dcb2cf-a957-4f83-9538-8725e3a09802",
+      "comment": "",
+      "command": "click",
+      "target": "id=listingform-otherattributefields-214",
+      "targets": [
+        ["id=listingform-otherattributefields-214", "id"],
+        ["name=ListingForm[otherAttributeFields][214]", "name"],
+        ["css=#listingform-otherattributefields-214", "css:finder"],
+        ["xpath=//select[@id='listingform-otherattributefields-214']", "xpath:attributes"],
+        ["xpath=//div[@id='w3']/div[5]/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div[5]/div/div/div/select", "xpath:position"],
+        ["xpath=//select[contains(.,'- Status -\n Coming Soon\n Coming Soon + Active Listings\n Active')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "23aec82a-3c8b-45b0-84c9-fc068a86d8bb",
+      "comment": "",
+      "command": "click",
+      "target": "id=listingform-otherattributefields-215",
+      "targets": [
+        ["id=listingform-otherattributefields-215", "id"],
+        ["name=ListingForm[otherAttributeFields][215]", "name"],
+        ["css=#listingform-otherattributefields-215", "css:finder"],
+        ["xpath=//select[@id='listingform-otherattributefields-215']", "xpath:attributes"],
+        ["xpath=//div[@id='w3']/div[6]/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//div[6]/div/div/div/select", "xpath:position"],
+        ["xpath=//select[contains(.,'- Pets OK? -\n All Pets OK\n Dogs Under 20 Pounds Allowed\n Dogs Under 40 Pounds Allowed\n No Pets')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b6792ddf-36df-406c-9bbd-0250c1f1419c",
+      "comment": "",
+      "command": "select",
+      "target": "id=listingform-otherattributefields-215",
+      "targets": [],
+      "value": "label=regexp:\\sAll\\sPets\\sOK"
+    }, {
+      "id": "69cbe3bb-be15-44cb-a183-80e6f2c8948e",
+      "comment": "",
+      "command": "click",
+      "target": "id=listingform-otherattributefields-215",
+      "targets": [
+        ["id=listingform-otherattributefields-215", "id"],
+        ["name=ListingForm[otherAttributeFields][215]", "name"],
+        ["css=#listingform-otherattributefields-215", "css:finder"],
+        ["xpath=//select[@id='listingform-otherattributefields-215']", "xpath:attributes"],
+        ["xpath=//div[@id='w3']/div[6]/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//div[6]/div/div/div/select", "xpath:position"],
+        ["xpath=//select[contains(.,'- Pets OK? -\n All Pets OK\n Dogs Under 20 Pounds Allowed\n Dogs Under 40 Pounds Allowed\n No Pets')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2d01cf79-b247-4bb6-bb26-34f50f35531b",
+      "comment": "",
+      "command": "click",
+      "target": "id=save-step-4-btn",
+      "targets": [
+        ["id=save-step-4-btn", "id"],
+        ["css=#save-step-4-btn", "css:finder"],
+        ["xpath=//button[@id='save-step-4-btn']", "xpath:attributes"],
+        ["xpath=//div[@id='step4']/div/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "526f88dd-2d19-49e3-8b0c-f463b2e1b362",
+      "comment": "",
+      "command": "click",
+      "target": "id=save-step-5-btn",
+      "targets": [
+        ["id=save-step-5-btn", "id"],
+        ["css=.col-6 > #save-step-5-btn", "css:finder"],
+        ["xpath=//button[@id='save-step-5-btn']", "xpath:attributes"],
+        ["xpath=//form[@id='listingform-id-step-5']/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/form/div/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Publish')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e5dbc9fe-f5c5-4913-9a80-5e3f3f5753e5",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.mt-2:nth-child(2) > .btn-cyan > .fal",
+      "targets": [],
+      "value": "30000"
+    }]
+  }, {
+    "id": "2208f295-96a1-4369-a808-1a08035d0307",
+    "name": "Promote Listing",
+    "commands": [{
+      "id": "a53b95c6-a9d9-460d-8dfa-2196b1fca616",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c40860f6-84c1-4da4-b461-e65e0c511763",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1608x1029",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ab2305a4-2727-41f3-9175-0ce02c9d67fb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.main-nav:nth-child(1) .nav-item:nth-child(2) > .btn:nth-child(1)",
+      "targets": [
+        ["linkText=Login/Sign Up", "linkText"],
+        ["css=.main-nav:nth-child(1) .nav-item:nth-child(2) > .btn:nth-child(1)", "css:finder"],
+        ["xpath=(//a[contains(text(),'Login/Sign Up')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/site/login')])[3]", "xpath:href"],
+        ["xpath=//div[2]/div/div[2]/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d790e987-7b0f-489e-b7ec-abbe1d65b566",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginform-email",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6c073afa-f0a6-4c2c-922c-389922a9a854",
+      "comment": "",
+      "command": "type",
+      "target": "id=loginform-email",
+      "targets": [
+        ["id=loginform-email", "id"],
+        ["name=LoginForm[email]", "name"],
+        ["css=#loginform-email", "css:finder"],
+        ["xpath=//input[@id='loginform-email']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form-modal']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "admin"
+    }, {
+      "id": "8172c434-0307-4112-8b13-23d8a84e7b78",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginform-password",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6f2e5d97-5815-4492-93e2-286944830d6e",
+      "comment": "",
+      "command": "type",
+      "target": "id=loginform-password",
+      "targets": [
+        ["id=loginform-password", "id"],
+        ["name=LoginForm[password]", "name"],
+        ["css=#loginform-password", "css:finder"],
+        ["xpath=//input[@id='loginform-password']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form-modal']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "singularity.is"
+    }, {
+      "id": "e212792b-a9de-4c93-8ce6-7f7372506a2d",
+      "comment": "",
+      "command": "click",
+      "target": "name=login-button",
+      "targets": [
+        ["name=login-button", "name"],
+        ["css=.btn-modal-control-submit", "css:finder"],
+        ["xpath=//button[@name='login-button']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form-modal']/div[4]/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f4c2dcfd-1fde-463d-82f4-7fdf3699afc4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.main-nav:nth-child(1) > .header-menu-bar:nth-child(2) #user-dropdown",
+      "targets": [
+        ["css=.main-nav:nth-child(1) > .header-menu-bar:nth-child(2) #user-dropdown", "css:finder"],
+        ["xpath=(//a[contains(text(),'My Account')])[2]", "xpath:link"],
+        ["xpath=(//a[@id='user-dropdown'])[2]", "xpath:attributes"],
+        ["xpath=(//a[contains(@href, '/site/login')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div/div[2]/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4e094fbf-c2f1-494c-9bf3-a1731ef2fb1e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Profile",
+      "targets": [
+        ["linkText=Profile", "linkText"],
+        ["css=.show .nav-item:nth-child(2) > .dropdown-item", "css:finder"],
+        ["xpath=(//a[contains(text(),'Profile')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/user')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div/div[2]/ul/li[2]/div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e6d0e79b-4a48-4428-9fd0-5d53d6c575ba",
+      "comment": "",
+      "command": "click",
+      "target": "css=.grid__item:nth-child(10) .grid-view-item-image:nth-child(1)",
+      "targets": [
+        ["css=.grid__item:nth-child(10) .grid-view-item-image:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='w0']/div/div/div/div[10]/div/div/a/img", "xpath:idRelative"],
+        ["xpath=//div[10]/div/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e8e80d7c-ac36-4787-9513-b3d1bc2737f5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.d-none .btn-gold",
+      "targets": [
+        ["css=.d-none .btn-gold", "css:finder"],
+        ["xpath=(//a[contains(text(),'Promote')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/listing/promote/72-updated-kitchen-flat')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div[2]/div[2]/div/a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9b7e4f9f-6491-471b-9ce9-a3986bcd2236",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=2",
+      "targets": [
+        ["index=2"]
+      ],
+      "value": ""
+    }, {
+      "id": "2cf604fc-66c6-4209-81d9-53a2d7ee639c",
+      "comment": "",
+      "command": "click",
+      "target": "name=cardnumber",
+      "targets": [
+        ["name=cardnumber", "name"],
+        ["css=span:nth-child(2) > .InputContainer > .InputElement", "css:finder"],
+        ["xpath=//input[@name='cardnumber']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/form/div/div[2]/span/span[2]/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "97d0986a-e1b5-4687-901d-c6137f8c768c",
+      "comment": "",
+      "command": "type",
+      "target": "name=cardnumber",
+      "targets": [
+        ["name=cardnumber", "name"],
+        ["css=.InputContainer > .is-complete", "css:finder"],
+        ["xpath=//input[@name='cardnumber']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/form/div/div[2]/span/span[2]/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": "4242 4242 4242 4242"
+    }, {
+      "id": "e05cd91c-f98a-4f4f-bdf9-bc4da69bb6f9",
+      "comment": "",
+      "command": "type",
+      "target": "name=exp-date",
+      "targets": [
+        ["name=exp-date", "name"],
+        ["css=span:nth-child(1) > .InputContainer > .is-complete", "css:finder"],
+        ["xpath=//input[@name='exp-date']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/form/div/div[2]/span[2]/span/span/input", "xpath:idRelative"],
+        ["xpath=//span[2]/span/span/input", "xpath:position"]
+      ],
+      "value": "04 / 24"
+    }, {
+      "id": "841f51d4-f190-46c8-ab4f-fb8323fee330",
+      "comment": "",
+      "command": "type",
+      "target": "name=cvc",
+      "targets": [
+        ["name=cvc", "name"],
+        ["css=.CardField-cvc .InputElement", "css:finder"],
+        ["xpath=//input[@name='cvc']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/form/div/div[2]/span[3]/span/span/input", "xpath:idRelative"],
+        ["xpath=//span[3]/span/span/input", "xpath:position"]
+      ],
+      "value": "242"
+    }, {
+      "id": "fc08bf05-0955-4ab0-aeb0-86477f33a27a",
+      "comment": "",
+      "command": "type",
+      "target": "name=postal",
+      "targets": [
+        ["name=postal", "name"],
+        ["css=.CardField-postalCode .InputElement", "css:finder"],
+        ["xpath=//input[@name='postal']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/form/div/div[2]/span[4]/span/span/input", "xpath:idRelative"],
+        ["xpath=//span[4]/span/span/input", "xpath:position"]
+      ],
+      "value": "42424"
+    }, {
+      "id": "eee1175b-c33f-4d80-9bd9-1f4fe889fd44",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "9948428d-e877-4d00-8a75-c301f18ad28a",
+      "comment": "",
+      "command": "click",
+      "target": "name=login-button",
+      "targets": [
+        ["name=login-button", "name"],
+        ["css=.btn-loading", "css:finder"],
+        ["xpath=//button[@name='login-button']", "xpath:attributes"],
+        ["xpath=//div[3]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d325675c-e3d7-46e8-aa1b-bbe94563db05",
+      "comment": "",
+      "command": "click",
+      "target": "css=.main-nav:nth-child(1) > .header-menu-bar:nth-child(2) .nav-item:nth-child(1) > .nav-link:nth-child(1)",
+      "targets": [
+        ["css=.main-nav:nth-child(1) > .header-menu-bar:nth-child(2) .nav-item:nth-child(1) > .nav-link:nth-child(1)", "css:finder"],
+        ["xpath=(//a[contains(text(),'Home')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/')])[24]", "xpath:href"],
+        ["xpath=//div[2]/div/div/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3bcd16ac-399f-4d47-a8d2-8c19a3d76be5",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.grid__item:nth-child(1) .grid-view-item-image:nth-child(1)",
+      "targets": [],
+      "value": "30000"
+    }]
+  }],
+  "suites": [{
+    "id": "4762f816-eb9d-4521-b8a9-fe539817f048",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["07dfae44-fd1d-405b-b8cd-1a45dbad54a5"]
+  }],
+  "urls": ["https://chicagooglasi.com/"],
+  "plugins": []
+}
