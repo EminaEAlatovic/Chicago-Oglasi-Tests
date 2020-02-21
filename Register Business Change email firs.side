@@ -102,7 +102,7 @@
       "value": ""
     }, {
       "id": "28121b24-af03-4527-a93c-25c1d9b70fb6",
-      "comment": "",
+      "comment": "Input new email for test",
       "command": "type",
       "target": "id=signupform-email",
       "targets": [
